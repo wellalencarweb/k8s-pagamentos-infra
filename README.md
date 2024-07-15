@@ -1,2 +1,2 @@
-# k8s-pagamentos-infra
-Gerenciar os recursos de Kubernetes específicos para o serviço de pagamentos.
+# infra-k8s-resources (Pagamentos)
+Repositório para administrar os recursos Kubernetes do projeto Tech Challenge.

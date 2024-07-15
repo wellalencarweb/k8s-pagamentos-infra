@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: pagamentos-load-balancer
+  name: pagamentos-load-balancer
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+    service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 6003
+  selector:
+    app: pagamentos-deployment
+  type: LoadBalancer
