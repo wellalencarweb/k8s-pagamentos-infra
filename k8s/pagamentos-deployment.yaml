@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: deiro1/app-fast-food-pagamentos:latest
+          image: wellalencar/app-fast-food-pagamentos:latest
           command: ["sh", "-c", "npm run start"]
           ports:
             - containerPort: 6003
